@@ -15,6 +15,7 @@ apt-get install libssh2-1-dev libssh2-php -y
 mysql -h localhost -u root -proot -e "CREATE DATABASE ssh"
 php -m |grep ssh2
 service apache2 restart
+wget https://raw.githubusercontent.com/ahsnet/panelv3/master/painelssh.zip
 cp painelssh.zip /var/www/html
 cd /var/www/html
 apt-get install unzip -y
